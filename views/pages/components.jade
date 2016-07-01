@@ -1,0 +1,185 @@
+doctype
+
+html
+ head
+  title Sample
+  meta( name='viewport', content='width=device-width, initial-scale=1')
+  link( rel='stylesheet', href='/pui-3.0.0/pivotal-ui.min.css')
+  link( rel='stylesheet', href='/font-mfizz-2.3.0/font-mfizz.css')
+  script( src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+  script( src='/javascripts/ping.js')
+  script( src='/javascripts/pivotal-ui.js')
+  
+  body(style="margin-top:0")
+
+  section(style="width:300px; height:100%; position:fixed; margin-top:-30px; padding:20px 0 0 10px; background-color:#f7f7f7")
+
+      .tab-simple
+          ul.nav
+            li
+              a(href='#Typography') Typography
+            li
+              a(href='#Buttons') Buttons
+            li
+              a(href='#FormElements') Form Elements
+            li
+              a(href='#OtherComponents') Other Components 
+            li
+              a(href='sample') [ A sample page layout ] 
+            li
+              a(href='/') [ Logout ] 
+
+  
+  section(style="margin:0 0 0 350px")  
+    a(name="Typography")
+
+    hr.divider-alternate-1
+
+    h1
+       | This is an H1
+      
+    h2
+       | This is an H2
+    
+    h3
+       | This is an H3
+    
+    h4
+       | This is an H4
+    
+    h5
+       | This is an H5
+
+    p
+       | This is regular text.
+    
+   
+
+   section(style="margin:0 0 0 350px")
+    a(name="Buttons")
+
+    hr.divider-alternate-1
+
+    button.btn.btn-default.btn-block Full width button
+    br
+    br
+      
+    a.btn.btn-default(aria-label='My Link', href='#') Button
+    br
+    br
+      
+    a.btn.btn-lowlight(aria-label='My Link', href='#') Button
+    br
+    br
+      
+    a.btn.btn-danger(aria-label='My Link', href='#') Button
+    br
+    br
+      
+    a.btn.btn-highlight(aria-label='My Link', href='#') Button
+    br
+    br
+      
+    a.btn.btn-highlight-alt(aria-label='My Link', href='#') Button
+    br
+    br
+      
+   section(style="margin:0 0 0 350px")
+    a(name="FormElements")
+
+        hr.divider-alternate-1
+
+    form(role='form')
+      
+      .form-group
+        .row
+            .col-md-8
+                label(for='exampleInputEmail1') Input Label
+                input#exampleInputEmail1.form-control(type='email', placeholder='Input')
+        .row
+            .col-md-16
+                br
+
+        .row
+            .col-md-16
+                .checkbox
+                    label
+                      input(type='checkbox')
+                      |       Option one is this and that—be sure to include why it's great
+        .row
+            .col-md-16        
+                .radio
+                    label
+                      input#optionsRadios1(name='optionsRadios', type='radio', value='option1', checked='')
+                      |       Option one is this and that—be sure to include why it's great
+        .row
+            .col-md-16        
+                .radio
+                    label
+                      input#optionsRadios2(name='optionsRadios', type='radio', value='option2')
+                      |       Option two can be something else and selecting it will deselect option one
+        
+        .row.spacer
+            .col-md-16
+                br
+
+        .row
+            .col-md-8
+              label(for='html5DateInput') Date Input
+               input#html5DateInput.form-control(placeholder='Date', type='date')
+        
+        .row.spacer
+            .col-md-16
+                br
+
+        .row
+            .col-md-8
+              label(for='html5NumberInput') Number Input
+               input#html5NumberInput.form-control(placeholder="Number", type="Number")    
+
+        .row.spacer
+            .col-md-16
+                br
+
+        .row
+            .col-md-8 
+               select.form-control
+                option default option
+                option an option
+                option another option   
+    
+       
+
+
+      
+   section(style="margin:0 0 0 350px")
+      a(name="OtherComponents")
+
+      hr.divider-alternate-1     
+
+      #accordion-5
+      .panel-heading-accordion.bg-neutral-11.collapse-trigger.collapsed(data-parent='#accordion-3', data-toggle='collapse', href='#myCollapse-5')
+            a(aria-label='trigger accordion')
+              .when-collapsed-inline
+                i.fa.fa-caret-right.collapse-icon
+              .when-expanded-inline
+                i.fa.fa-caret-down.collapse-icon
+            h3.h5.collapse-title.type-em-1.type-primary-2 My fancy application
+      #myCollapse-5.panel-collapse.collapse
+        .panel-body-accordion-divider.bg-neutral-11
+          | This content should hide and show when the trigger is clicked.
+
+
+      .panel.panel-basic.bg-neutral-11
+        .panel-header
+          .panel-title-alt Basic Title
+        .panel-body
+          | Basic Panel
+      .panel.panel-basic.bg-neutral-11
+        .panel-body
+          | Basic Panel
+    
+    .row(style="height:500px")
+            .col-md-16
+                br
+      a.back-to-top(href='#top', style='display: inline;', aria-label='Back to top')

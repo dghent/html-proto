@@ -1,6 +1,6 @@
 ---
 applications:
-- name: cf-nodejs
+- name: ghents-nodeapp
   memory: 512M
   instances: 1
-  random-route: true
+  # random-route: true

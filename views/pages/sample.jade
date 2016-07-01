@@ -1,0 +1,115 @@
+doctype
+
+html
+ head
+  title Sample
+  meta( name='viewport', content='width=device-width, initial-scale=1')
+  link( rel='stylesheet', href='/pui-3.0.0/pivotal-ui.min.css')
+  //- script( src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+  //- script( src='/javascripts/ping.js')
+  script( src='/javascripts/pivotal-ui.js')
+
+  body
+    br
+    br
+    center        
+       a(href="/components") 
+        img.small.type-neutral-4.img-circle.avatar(alt='...', height='100', src='images/avatar.jpg', width='100')
+    
+    h1.txt-c
+        | A collection of stuff.
+     
+    .pane.bg-full-bleed(style='background-image: url(images/home-banner.jpg); height:500px')
+
+    br
+    
+    .table-scrollable.table-scrollable-sm
+      .table-scrollable-header
+        table.table.table-data.table-light
+          thead
+            tr
+              th(width='10%') #
+              th(width='16%') Status
+              th(width='12%') CPU
+              th(width='16%') Memory
+              th(width='16%') Disk
+              th(width='30%') Uptime
+      .table-scrollable-body
+        table.table.table-data.table-light
+          tbody
+            tr
+              td(width='10%') 0
+              td(width='16%') Running
+              td(width='12%') 0%
+              td(width='16%') 4.16 MB
+              td(width='16%') 6.75 MB
+              td(width='30%') 27 min
+            tr
+              td 1
+              td Running
+              td 0%
+              td 4.07 MB
+              td 6.75 MB
+              td 27 min
+            tr
+              td 2
+              td Running
+              td 0%
+              td 4.07 MB
+              td 6.75 MB
+              td 25 min
+            tr
+              td 3
+              td Running
+              td 0%
+              td 4.14 MB
+              td 6.75 MB
+              td 25 min
+            tr
+              td 4
+              td Running
+              td 0%
+              td 4.08 MB
+              td 6.75 MB
+              td 25 min
+            tr
+              td 5
+              td Running
+              td 0%
+              td 4.16 MB
+              td 6.75 MB
+              td 25 min
+            tr
+              td 6
+              td Running
+              td 0%
+              td 4.07 MB
+              td 6.75 MB
+              td 25 min
+            tr
+              td 7
+              td Running
+              td 0%
+              td 4.07 MB
+              td 6.75 MB
+              td 25 min
+            tr
+              td 8
+              td Running
+              td 0%
+              td 4.03 MB
+              td 6.75 MB
+              td 25 min
+            tr
+              td 9
+              td Running
+              td 0%
+              td 4.07 MB
+              td 6.75 MB
+              td 25 min
+
+
+    br
+              
+    section.txt-c
+     a.btn.btn-default(aria-label='My Link', href='components') Back to components
