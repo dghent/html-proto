@@ -2,10 +2,11 @@ doctype
 
 html
  head
-  title = Sample
+  title Give me some data
   meta( name='viewport', content='width=device-width, initial-scale=1')
   link( rel='stylesheet', href='/pui-3.0.0/pivotal-ui.min.css')
   link( rel='stylesheet', href='/font-mfizz-2.3.0/font-mfizz.css')
+  link( rel='stylesheet', href='/css/main.css')
   script( src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
   script( src='/javascripts/ping.js')
   script( src='/javascripts/pivotal-ui.js')
@@ -13,45 +14,40 @@ html
   body
     .container.pan
       section.header
-        .row.man.col-xs-24.col-sm-24.col-md-24.col-lg-24.mvxxl.txt-c
-          span.h1.em-high.txt-m.mhl.type-neutral-4 
-          img(src='/images/sun.svg') 
-        br
-        .row.col-lg-offset-9.col-lg-6.col-md-offset-8.col-md-8.col-sm-offset-6.col-sm-12.col-xs-offset-2.col-xs-20
-          section.content
-            form(role='form')
-            .form-group
-              label(for='exampleInputEmail1') Email address
-              input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
-            .form-group
-              label(for='exampleInputPassword1') Password
-              input#exampleInputPassword1.form-control(type='password', placeholder='Password')
-            .Checkbox
-              label
-                input(type='Checkbox')
-                |  Check me out
-                displayError({true})
-                errorMessage("You must accept")
+        img(src='/images/sun.svg') 
+      section.content
+        form(role='form')
+          .form-group.mbxl
+            label(for='exampleInputEmail1') Email address
+            input#exampleInputEmail1.form-control(type='email', placeholder='Enter email')
+          .form-group.mbxl
+            label(for='exampleInputPassword1') Password
+            input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+          .Checkbox.mbxl
+            label
+            input(type='Checkbox')
+            |  Check me out
+            displayError({true})
+            errorMessage("You must accept")
             
-            button.btn.btn-default(data-toggle='modal', data-target="#login-modal") Submit
-            // Modal Basic
-            #login-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
-              .modal-dialog
-                .modal-content
-                  .modal-header
-                    button.close(type='button', data-dismiss='modal')
-                      span(aria-hidden='true') ×
-                      span.sr-only Close
-                    h4#myModalLabel.modal-title It's jam time.
-                  .modal-body
-                    | We're going to look at some cool shit.
-                  .modal-footer
-                    button.btn.btn-lowlight(type='button', data-dismiss='modal') Nope
-                    a.button.btn.btn-highlight(type='button' href="components") Let's go!
+        button.btn.btn-default(data-toggle='modal', data-target="#login-modal") Submit
+      
+      // Modal Basic
+      #login-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+        .modal-dialog
+          .modal-content
+           .modal-header
+              button.close(type='button', data-dismiss='modal')
+                span(aria-hidden='true') ×
+                span.sr-only Close
+              h4#myModalLabel.modal-title It's jam time.
+            .modal-body
+                | Cool?
+            .modal-footer
+              button.btn.btn-lowlight(type='button', data-dismiss='modal') Nope
+              a.button.btn.btn-highlight(type='button' href="form1") Let's go!
 
 
-    br
-    br
     section.footer
       include ../partials/footer
 

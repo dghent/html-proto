@@ -1,0 +1,59 @@
+doctype
+
+html
+ head
+  title Hi, I'm a form.
+  meta( name='viewport', content='width=device-width, initial-scale=1')
+  link( rel='stylesheet', href='/pui-3.0.0/pivotal-ui.min.css')
+  link( rel='stylesheet', href='/font-mfizz-2.3.0/font-mfizz.css')
+  link( rel='stylesheet', href='/css/main.css')  
+  script( src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+  script( src='/javascripts/ping.js')
+  script( src='/javascripts/pivotal-ui.js')
+  
+  
+  body
+
+  section.intro
+
+
+    h2.cardTitle
+       | Hi, I'm a form.
+    
+      
+   section.content
+
+    form(role='form')
+      .form-group.mbxl
+        label Input Label
+        input#Input1.form-control(type='', placeholder='Input')
+      .form-group.mbxl
+        label Input Label
+        input#Input1.form-control(type='', placeholder='Input')
+      .form-group.mbxl
+        label Input Label
+        input#Input1.form-control(type='', placeholder='Input')
+      .form-group.mbxl
+        label Input Label
+        input#Input1.form-control(type='', placeholder='Input')
+      .form-group.mbxl
+        label Input Label
+        input#Input1.form-control(type='', placeholder='Input')
+      .form-group.mbxl
+        label Input Label
+        input#Input1.form-control(type='', placeholder='Input')    
+      .date-input.form-group.mbxl
+        label(for='html5DateInput') Date Input
+        input#html5DateInput.form-control(placeholder='Date', type='date')
+      .number-input.form-group.mbxl    
+        label(for='html5NumberInput') Number Input
+        input#html5NumberInput.form-control(placeholder="Number", type="Number")
+      select.form-control.form-group.mbxl
+        option default option
+        option an option
+        option another option
+
+      hr.divider-alternate-1
+
+      a.button.btn.btn-default(type='button' href="form2") Next
+      

@@ -22,10 +22,14 @@ app.get( '/', function ( req, res) {
   })
 })
 
-app.get( '/sample', function ( req, res) {
-  res.render( 'pages/sample', {})
+app.get( '/form1', function ( req, res) {
+  res.render( 'pages/form1', {})
 })
-app.get( '/components', function ( req, res) {
-  res.render( 'pages/components', {})
+app.get( '/form2', function ( req, res) {
+  res.render( 'pages/form2', {})
 })
+app.get( '/form-complete', function ( req, res) {
+  res.render( 'pages/form-complete', {})
+})
+
 app.listen( process.env.PORT || 4000)
